@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = prompt('Enter some text!');
+        let firstLetter = null;
+        let restOfString = null;
+        let newString = null;
+
+        capitalize(string);
+
+        function capitalize(string) {
+        firstLetter = string.slice(0, 1);
+        firstLetter = firstLetter.toUpperCase();
+        restOfString = string.slice(1);
+        restOfString = restOfString.toLowerCase();
+        newString = firstLetter + restOfString;
+        }
+
+        console.log(newString);
+        console.log(firstLetter);
+        console.log(restOfString);
+    </script>
+</body>
+</html>
